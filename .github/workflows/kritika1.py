@@ -7,7 +7,7 @@ def count_vowels(sentence):
     return vowel_count
 
 # Sentence is defined here
-sentence = "aeiou"
+sentence = "this is devops class."
 
 # Count vowels in the sentence
 print("Number of vowels:", count_vowels(sentence))
