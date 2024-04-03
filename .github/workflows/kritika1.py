@@ -1,9 +1,13 @@
-import random
+def count_vowels(sentence):
+    vowels = 'aeiouAEIOU'
+    vowel_count = 0
+    for char in sentence:
+        if char in vowels:
+            vowel_count += 1
+    return vowel_count
 
-def main():
-    # Generate a random number each time the script is run
-    random_number = random.randint(1, 100)
-    print("Random number:", random_number)
+# Sentence is defined here
+sentence = "This is a sample sentence containing vowels."
 
-if __name__ == "__main__":
-    main()
+# Count vowels in the sentence
+print("Number of vowels:", count_vowels(sentence))
